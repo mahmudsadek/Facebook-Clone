@@ -1,0 +1,464 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    font-family: system-ui;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:solid;
+    border-color: #e5e7eb;
+
+}
+
+.fb-ico {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    padding-top: 5px;
+}
+
+.icon {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.search-box {
+    height: 35px;
+    width: 200px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: medium;
+    border-radius: 20px;
+    border-style: hidden;
+    background-color: #f1f1f1d7;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.photo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.profile-left {
+    margin-right: 10px;
+}
+
+.profilePhoto {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-right: 15px;
+    width: 93px;
+    height: 36px;
+    padding-right: 27px;
+    padding-left: 3px;
+    text-decoration: inherit;
+    font-weight: bold;
+    color: black;
+}
+
+.userName {
+    padding-left: 7px;
+}
+
+.profilePhoto:hover {
+    display: inline-flex;
+    align-items: center;
+    background-color: #d1d0d0d7;
+    margin-top: 8px;
+    margin-right: 15px;
+    width: 93px;
+    height: 36px;
+    padding-right: 27px;
+    padding-left: 3px;
+    border-radius: 20px;
+    text-decoration: inherit;
+    font-weight: bold;
+    color: black;
+}
+
+.notif {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.notif:hover {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.header-right {
+    text-decoration: none;
+}
+
+.notifcations {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+    font-size: smaller;
+    color: white;
+    font-weight: bold;
+    margin-left: -20px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.contanier {
+    display: flex;
+    background-color: #e7e7e78c;
+    width: 100%;
+}
+.time-line {
+    width: 60%;
+    position: unset;
+    display: flow-root;
+    margin: auto;
+    /* align-items: center; */
+}
+
+.left-menu {
+    position: fixed;
+    left: 0px;
+    top: 55px;
+    width: 20%;
+    overflow-wrap: break-word;
+    margin-top:20px ;
+    /* align-content: start; */
+}
+
+.right-menu {
+    position: fixed;
+    right: 0px;
+    width: 20%;
+    top: 50px;
+    margin-top:15px ;
+    overflow-wrap: break-word;
+    align-items: end;
+}
+
+.left-menu-contant {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    margin: 0px 15px;
+    text-decoration: inherit;
+    font-weight: bold;
+    font-family: system-ui;
+    color: black;
+}
+
+.left-menu-contant:hover {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: #dbdadabe;
+    border-radius: 10px;
+    text-decoration: inherit;
+    font-weight: bold;
+    color: black;
+
+}
+
+.left-menu-image {
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    margin-right: 15px;
+}
+.watch {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.span-notif {
+    font-size: small;
+    color: blue;
+}
+
+.shortcat-name {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+    margin: 10px 20px;
+    padding: 8px 5px;
+    border-top: ridge;
+    display: flex;
+    justify-content: space-between;
+}
+.shortcat-span {
+    padding: 10px 0px;
+}
+
+.shortcat-edit{
+    visibility: hidden;
+    text-decoration: inherit;
+    color: blue;
+    padding: 10px 5px;
+
+}
+.shortcat-edit:hover{
+    visibility: visible;
+    background-color: #dbdadad7;
+    border-radius: 5px;
+    text-decoration: inherit;
+    font-weight: bold;
+    color: blue;
+    padding: 10px 5px;
+}
+
+.shortcat-name:hover .shortcat-edit{
+    visibility: visible;
+}
+
+.shortcut-groups {
+    display: inline;
+}
+
+.groups {
+    border-radius: 15%;
+}
+
+.footer {
+    margin: 35px 13px 20px;
+    padding: 25px 0px 6px;
+    padding-left: 10px;
+    font-size:15px;
+    color: rgb(107, 107, 107);
+    text-decoration: inherit;
+}
+.link-footer {
+    color: rgb(107, 107, 107);
+    text-decoration: inherit;
+}
+
+.friend-request {
+    margin: 10px 10px 10px;
+}
+.text {
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frenidreq {
+    padding: 10px 5px;
+    font-weight: bold;
+    color: #808080;
+}
+
+.See-all {
+    text-decoration: inherit;
+    color: blue;
+    padding: 10px 5px;
+}
+.See-all:hover {
+    background-color: #dbdadad7;
+    border-radius: 5px;
+    text-decoration: inherit;
+    color: blue;
+    padding: 10px 5px;
+}
+
+.friendrequest {
+    display: block;
+}
+.friendrequest:hover {
+    display: block;
+}
+
+.request-image-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right-menu-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.requests-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -25px;
+    width: 100%;
+}
+
+.confiem-btn {
+    margin-right: 10px;
+    width: 30%;
+    height: 30px;
+    border: aliceblue;
+    background-color: blue;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.delete-btn {
+    margin-right: 10px;
+    width: 30%;
+    height: 30px;
+    border: aliceblue;
+    background-color: rgba(189, 188, 188, 0.699);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: bold;
+}
+
+.contacts {
+    width: 100%;
+    height: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: inherit;
+}
+
+.contact-name {
+    color: rgb(5, 5, 5);
+    padding: 10px 20px;
+}
+.contact-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.active {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    margin-bottom: -20px;
+    margin-left: -16px;
+}
+
+.storys {
+
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    height: 250px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.create-story {
+    width: 20%;
+    height: 200px;
+}
+
+.create {
+    width: 100px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.create-text {
+    display: flex;
+    background-color: gray;
+    margin-top: -50px;
+    width: 100px;
+    position: absolute;
+    text-align: center;
+    height: 50px;
+    padding-top: 40px;
+    border-radius: 10px;
+}
+
+.create-post {
+    background-color: white;
+    border-radius: 15px;
+    width: 70%;
+    margin: auto;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #c9c9c95e;
+    
+}
+
+.post-text-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 10px 25px;
+    border-bottom: ridge;
+    padding-bottom: 7px;
+}
+
+.post-img-create {
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.input-post {
+    width: 100%;
+    border-radius: 20px;
+    outline-style: none;
+    border-style: none;
+    background-color: #dbdbdb6b;
+    font-size: medium;
+    padding-left: 20px;
+}
+
+.video-photo-live {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 25px;
+}
+
+.v-p-l {
+    text-decoration: unset;
+    width: 200px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #8b8b8bf0;
+    padding: 10px 30px;
+    text-align: center;
+}
+.v-p-l:hover {
+    text-decoration: unset;
+    font-size: 15px;
+    font-weight: bold;
+    color: #8b8b8bf0;
+    background-color: #c9c8c87c;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
